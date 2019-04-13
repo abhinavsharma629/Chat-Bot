@@ -1,3 +1,5 @@
+#The solution run sin py 2.7
+
 import json
 
 #class holding function which are common to both task
@@ -152,7 +154,7 @@ class Bot(Common):
                     self.variables[variable_name[0:start]].append([])
                     self.variables[variable_name[0:start]][int(variable_name[start+1:-1])]=user_input
 
-                    #extra part because of wrong json data given 
+                    #extra part because of wrong json data given as indicated in the image
                     try:
                         self.variables['row'].append([])
                         self.variables['row'][int(variable_name[start+1:-1])]=user_input
