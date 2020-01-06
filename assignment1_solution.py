@@ -28,9 +28,17 @@ class Common():
 
     #to get the instruction using the format function
     def get_instruction(self,text,all_data):
-        if text.get('instruction_var'):
-            return text['instruction'] % (tuple((all_data.get(j)) for j in text.get('instruction_var')))
-        return text['instruction']
+        #print(text)
+        try:
+            if(text.get('instruction_var')):
+                # print("ok")
+                #print((tuple((all_data.get(j)) for j in text.get('instruction_var'))))
+                # print(all_data)
+                #print(text['instruction'])
+                return text['instruction'] % ((tuple((all_data.get(j)) for j in text.get('instruction_var'))))
+            return text['instruction']
+        except Exception as e:
+            return text['instruction']
     
 
 class Bot(Common):
@@ -103,11 +111,13 @@ class Bot(Common):
                         local=self.variables
                         local.update({"i+1":j+1,"i":j,"str(t_matrix[i])":self.variables['t_matrix'][j]})
                         message=self.commonFunc.get_instruction(i,local)
+                        print(message)
                         self.produce_output(time=times,message=message)
 
                 # if it don't have any list_var variable then simply print the instruction
                 else:
                     message=self.commonFunc.get_instruction(i,self.variables)
+                    print(message)
                     self.produce_output(time=times,message=message)
             
             #if objects contain calculated_variable then save the variable using the given formula           

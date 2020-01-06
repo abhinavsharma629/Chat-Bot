@@ -34,7 +34,7 @@
             "var":"age"
         },
         {
-            "instruction":"Congratulations! Registration Successful."
+            "instruction":"Congratulations! Registration Successfull."
         },
         {
             "calculated_variable":"True",
