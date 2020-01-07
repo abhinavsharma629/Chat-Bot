@@ -1,6 +1,6 @@
 # Instruction to run the assignment-:
-- Run the file assig1_solution.py for the assignment1
-- Run the file assign2_solution.py for the assignment2
+- Run the file assignment1_solution.py for the assignment1
+- Run the file assignment2_solution.py for the assignment2
 
 
 
