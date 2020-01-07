@@ -1,13 +1,15 @@
 #The solution run sin py 2.7
 
 import json
+# from tkinter import *
+# import tkinter.messagebox
 
 #class holding function which are common to both task
 class Common():
     
     #to take input through the file
     def file_input(self):
-        file_name=raw_input("Enter the file name which contain the input-: ")
+        file_name=raw_input("Enter the file name which contain the input:- ")
         file_read=open(file_name+".json")
         data=""
         with open(file_name+".json") as f:
@@ -179,6 +181,20 @@ class Bot(Common):
         #write the generated json data into a file    
         self.commonFunc.file_write(self.output)
 
+# root=Tk()
+# root.title('SBI')
+
 if __name__=="__main__":                                                    
     k=Bot()
     k.start_procedure()
+    
+    # root.geometry("1000x1000")
+    # root.config(background='light blue')
+    # fr1=Frame(root,width=1000,height=1000).place(x=1000,y=1000)
+    
+    # Label(fr1,text="WELCOME TO SBI SERVICES",font="Times 30",bg="blue",fg="yellow").place(x=220,y=0)
+    # Label(fr1,image=img).place(x=200,y=100)
+    # Button(fr1,text="SIGN UP",command=fun,fg="blue",bg="yellow",font=('Arial',15)).place(x=250,y=450)
+    # Button(fr1,text="SEE DETAILS",command=seedetails,fg="blue",bg="yellow",font=('Arial',15)).place(x=590,y=450)
+    # Button(fr1,text="SIGN IN",command=login,fg="blue",bg="yellow",font=('Arial',17)).place(x=430,y=520)
+    # root.mainloop()

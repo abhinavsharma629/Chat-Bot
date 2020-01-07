@@ -2,7 +2,7 @@
     "function":"sample-text-function",
     "questions":[
         {
-            "instruction":"Hello! I'm Elth. I'm your algorithms bot."
+            "instruction":"\nHello! I'm Hydra. I'm your algorithms bot.\n"
         },
         {
             "text":"Before starting please tell me your first name",
@@ -16,7 +16,7 @@
             "text":"And your gender?",
             "options":[
                 "Male",
-                "female"
+                "Female"
             ],
             "var":"gender"
         },
@@ -34,7 +34,10 @@
             "var":"age"
         },
         {
-            "instruction":"Congratulations! Registration Successfull."
+            "instruction":"\nCongratulations! Registration Successfull.\n"
+        },
+        {
+            "instruction":"----------------------------------------------\n"
         },
         {
             "calculated_variable":"True",

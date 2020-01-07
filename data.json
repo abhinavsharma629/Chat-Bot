@@ -1,0 +1,129 @@
+{
+    "stage1": {
+        "Bot Says": [
+            {
+                "message": {
+                    "text": "\nHello! I'm Hydra. I'm your algorithms bot.\n"
+                }
+            }, 
+            {
+                "message": {
+                    "text": "Before starting please tell me your first name"
+                }
+            }
+        ], 
+        "User Says": "ABhi"
+    }, 
+    "stage2": {
+        "Bot Says": [
+            {
+                "message": {
+                    "text": "Please tell me your last name"
+                }
+            }
+        ], 
+        "User Says": "dfkh"
+    }, 
+    "stage3": {
+        "Bot Says": [
+            {
+                "message": {
+                    "quick_replies": [
+                        {
+                            "content_type": "text", 
+                            "payload": "male", 
+                            "title": "Male"
+                        }, 
+                        {
+                            "content_type": "text", 
+                            "payload": "female", 
+                            "title": "Female"
+                        }
+                    ], 
+                    "text": "And your gender?"
+                }
+            }
+        ], 
+        "User Says": "Male"
+    }, 
+    "stage4": {
+        "Bot Says": [
+            {
+                "message": {
+                    "text": "May I know your age?"
+                }
+            }
+        ], 
+        "User Says": "21"
+    }, 
+    "stage5": {
+        "Bot Says": [
+            {
+                "message": {
+                    "text": "\nCongratulations! Registration Successfull.\n"
+                }
+            }, 
+            {
+                "message": {
+                    "text": "----------------------------------------------\n"
+                }
+            }, 
+            {
+                "message": {
+                    "text": "Hello ABhi dfkh , How are you? For a sample of my work I can show you how to make a transpose of a 3X3 matrix."
+                }
+            }, 
+            {
+                "message": {
+                    "text": "Enter the first row of the matrix(3 integers space seperated)."
+                }
+            }
+        ], 
+        "User Says": "12  3 4"
+    }, 
+    "stage6": {
+        "Bot Says": [
+            {
+                "message": {
+                    "text": "Enter the second row of the matrix(3 integers space seperated)."
+                }
+            }
+        ], 
+        "User Says": "2 3 4"
+    }, 
+    "stage7": {
+        "Bot Says": [
+            {
+                "message": {
+                    "text": "Enter the third row of the matrix(3 integers space seperated)."
+                }
+            }
+        ], 
+        "User Says": "3 4 5"
+    }, 
+    "stage8": {
+        "Bot Says": [
+            {
+                "message": {
+                    "text": "This is the transpose of the input matrix"
+                }
+            }, 
+            {
+                "message": {
+                    "text": "Row 1 : [12, 2, 3]"
+                }
+            }, 
+            {
+                "message": {
+                    "text": "Row 2 : [3, 3, 4]"
+                }
+            }, 
+            {
+                "message": {
+                    "text": "Row 3 : [4, 4, 5]"
+                }
+            }
+        ], 
+        "User Says": ""
+    }
+}
